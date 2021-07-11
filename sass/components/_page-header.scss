@@ -1,0 +1,107 @@
+.siteNav {
+  display: $flex;
+  align-items: center;
+}
+.logoStudio {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192em;
+  color: #212121;
+}
+.mainNav {
+  display: $flex;
+  justify-content: space-between;
+}
+.navList {
+  display: $flex;
+  margin-left: 93px;
+  &:last-child & {
+    margin-right: &mr;
+  }
+}
+.navList-item {
+  margin-right: 50px;
+}
+/*.navList .navList-item:last-child {
+  margin-right: &mr;
+}*/
+.icons-contakts {
+  margin-right: 10px;
+  fill: #757575;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: $color;
+  }
+  .contaktsLinks:focus & {
+    fill: $color;
+  }
+  .contaktsLinks:hover & {
+    fill: $color;
+  }
+}
+.contaktsLinks {
+  color: $color;
+}
+.navList-link {
+  font-weight: 500;
+  line-height: 1.142em;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-bottom: 31px;
+  position: relative;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+}
+/*Как это расписать?*/
+.navList-link.courant::after {
+  content: "";
+
+  position: absolute;
+
+  display: block;
+
+  width: 100%;
+  height: 4px;
+  bottom: $mr;
+  left: $mr;
+  background: $color;
+  border-radius: 2px;
+}
+
+.navList-link.courent::after {
+  opacity: $mr;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navList-link:hover::after {
+  opacity: 1;
+}
+.courant {
+  color: $color;
+}
+.contaktsLinks {
+  font-weight: 500;
+  line-height: 1.142em;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+
+  color: #757575;
+  display: $flex;
+  align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color;
+  }
+}
+/*.contaktsLinks:focus .icons-contakts {
+  fill: $color;
+}
+.contaktsLinks:hover .icons-contakts {
+  fill: $color;
+}*/

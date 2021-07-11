@@ -1,0 +1,37 @@
+.clients {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  margin-bottom: 50px;
+}
+.container-clients {
+  width: 1170px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.box-a {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus,
+  &:hover {
+    fill: #2196f3;
+  }
+}
+.button-icon-clients {
+  padding: $mr;
+  margin: $mr;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

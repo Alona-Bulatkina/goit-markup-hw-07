@@ -1,0 +1,38 @@
+.work_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.images {
+  display: $flex;
+  justify-content: space-between;
+}
+.product-thumb {
+  position: relative;
+}
+
+.lettering {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: $mr;
+  left: $mr;
+  width: 100%;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+}
+.lettering {
+  p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

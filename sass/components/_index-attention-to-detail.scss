@@ -1,0 +1,47 @@
+.title {
+  font-weight: bold;
+  line-height: 1.142em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-top: 30px;
+}
+.iconSection {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: $mr;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #f3f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.titleClassSection {
+  width: 270px;
+  height: 120px;
+  background: #f3f4fa;
+  border-radius: 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.titleClass {
+  display: $flex;}
+/*.titleClassSection:not(:last-child) {
+  margin-right: 30px;
+}*/
+.titleClassSection {
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+  }
+}
+.titleList,
+.title {
+  margin-bottom: 10px;
+}

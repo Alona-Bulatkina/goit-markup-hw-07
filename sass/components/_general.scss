@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+*,
+* ::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: #757575;
+}
+* {
+  list-style: none;
+  margin: $mr;
+  padding: $mr;
+}
+a {
+  text-decoration: none;
+}
+header {
+  height: 80px;
+  display: flex;
+  border: 1px solid #ececec;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

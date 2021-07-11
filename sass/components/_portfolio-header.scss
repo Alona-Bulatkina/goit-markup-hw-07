@@ -1,0 +1,12 @@
+.mainList {
+  display: $flex;
+  align-items: center;
+}
+.mainList {
+  li {
+    margin-right: 50px;
+  }
+}
+.mainList .mainListContakts:last-child {
+  margin-right: &mr;
+}
