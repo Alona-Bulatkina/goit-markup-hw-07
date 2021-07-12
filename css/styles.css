@@ -44,28 +44,28 @@ img {
 
 /* Portfolio - кнопки*/
 
-.button {
+.filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
-.button .buttonListMenu:last-child {
+.filter .filter__item:last-child {
   margin-right: 0;
 }
-.buttonListMenu {
+.filter__item {
   margin-right: 8px;
   background: #f5f4fa;
   border-radius: 4px;
 }
-.listMenu:hover,
-.listMenu:focus {
+.filter__button:hover,
+.filter__button:focus {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: #ffffff;
 }
-.listMenu {
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625em;
@@ -107,7 +107,7 @@ img {
     ),
     url("../images/Img.jpg");
 }
-.text {
+.hero__text {
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
@@ -120,11 +120,11 @@ img {
   margin-bottom: 30px;
   width: 696px;
 }
-.mainButton:hover,
-.mainButton:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: #ffffff;
 }
-.mainButton {
+.hero__button {
   border: transparent;
   cursor: pointer;
   background: #2196f3;
@@ -145,7 +145,7 @@ img {
 
 /*page- header*/
 
-.siteNav {
+.header__nav {
   display: flex;
   align-items: center;
 }
@@ -159,29 +159,29 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.navList {
+.header__nav__list {
   display: flex;
   margin-left: 93px;
 }
-.navList-item {
+.header__nav__item {
   margin-right: 50px;
 }
-.navList .navList-item:last-child {
+.header__nav__list .header__nav__item:last-child {
   margin-right: 0;
 }
-.icons-contakts {
+.header__nav__icon {
   margin-right: 10px;
   fill: #757575;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-contakts:hover {
+.header__nav__icon:hover {
   fill: #2196f3;
 }
-.contaktsLinks {
+.header__nav__contakts {
   color: #2196f3;
 }
-.navList-link {
+.header__nav__link {
   font-weight: 500;
   line-height: 1.142em;
   letter-spacing: 0.02em;
@@ -191,11 +191,11 @@ img {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navList-link:focus,
-.navList-link:hover {
+.header__nav__link:focus,
+.header__nav__link:hover {
   color: #2196f3;
 }
-.navList-link.courant::after {
+.header__nav__link.courant::after {
   content: "";
 
   position: absolute;
@@ -209,17 +209,17 @@ img {
   background: #2196f3;
   border-radius: 2px;
 }
-.navList-link.courent::after {
+.header__nav__link.courent::after {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navList-link:hover::after {
+.header__nav__link:hover::after {
   opacity: 1;
 }
 .courant {
   color: #2196f3;
 }
-.contaktsLinks {
+.header__nav__contakts {
   font-weight: 500;
   line-height: 1.142em;
   letter-spacing: 0.02em;
@@ -231,23 +231,23 @@ img {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contaktsLinks:focus,
-.contaktsLinks:hover {
+.header__nav__contakts:focus,
+.header__nav__contakts:hover {
   color: #2196f3;
 }
-.contaktsLinks:focus .icons-contakts {
+.header__nav__contakts:focus .header__nav__icon {
   fill: #2196f3;
 }
-.contaktsLinks:hover .icons-contakts {
+.header__nav__contakts:hover .header__nav__icon {
   fill: #2196f3;
 }
 /*конец*/
 
 /* portfolio.html Карточки*/
-.item {
+.card__set__item {
   position: relative;
 }
-.item::before {
+.card__set__item::before {
   display: inline-block;
   position: absolute;
   width: 370px;
@@ -260,23 +260,23 @@ img {
   transform: translateY(100%);
   transition: transform 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item:focus::before .item:hover::before {
+.card__set__item:focus::before .card__set__item:hover::before {
   opacity: 1;
 }
-.item-a {
+.card__set__link {
   display: block;
 }
-.item-a:focus .div-card-set,
-.item-a:hover .div-card-set {
+.card__set__link:focus .card__set__description,
+.card__set__link:hover .card__set__description {
   transform: translateY(0);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.div-item-img {
+.card__set__box {
   position: relative;
   overflow: hidden;
 }
-.div-card-set {
+.card__set__description {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   top: 0;
@@ -287,17 +287,17 @@ img {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-set:hover .item::before {
+.card_set:hover .card__set__item::before {
   transform: translateY(0);
 }
-.card-set {
+.card_set {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
   overflow: hidden;
 }
-.card-set > .item {
+.card_set > .card__set__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -305,7 +305,7 @@ img {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.item-card-set {
+.card__set__text {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
@@ -315,13 +315,13 @@ img {
 
   padding: 63px 24px;
 }
-.cardItem {
+.card__set__bl {
   padding-top: 20px;
   padding-bottom: 24px;
   padding-left: 24px;
   padding-right: 24px;
 }
-.group {
+.card__set__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
@@ -329,7 +329,7 @@ img {
   color: #212121;
   margin-bottom: 4px;
 }
-.groupName {
+.card__set__txt {
   font-size: 16px;
   line-height: 1.875em;
   color: #757575;
@@ -338,28 +338,28 @@ img {
 
 /* portfolio.html Header */
 
-.mainList {
+.header__nav__bl {
   display: flex;
   align-items: center;
 }
-.mainList li {
+.header__nav__bl li {
   margin-right: 50px;
 }
-.mainList .mainListContakts:last-child {
+.header__nav__bl .header__nav__ListContakts:last-child {
   margin-right: 0;
 }
 /* конец */
 
 /* index.html Внимание к деталям*/
 
-.title {
+.titleClass__title {
   font-weight: bold;
   line-height: 1.142em;
   text-transform: uppercase;
   color: #212121;
   margin-top: 30px;
 }
-.iconSection {
+.titleClass__box {
   padding-top: 25px;
   padding-bottom: 25px;
   margin: 0;
@@ -370,7 +370,7 @@ img {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.titleClassSection {
+.titleClass__item {
   width: 270px;
   height: 120px;
   background: #f3f4fa;
@@ -379,10 +379,10 @@ img {
 .titleClass {
   display: flex;
 }
-.titleClassSection:not(:last-child) {
+.titleClass__item:not(:last-child) {
   margin-right: 30px;
 }
-.titleClassSection p {
+.titleClass__item p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
@@ -390,14 +390,13 @@ img {
 
   color: #757575;
 }
-.titleList,
-.title {
+.titleClass__title {
   margin-bottom: 10px;
 }
 /*конец*/
 
 /* index.html Чем мы занимаемся */
-.work_title {
+.section__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.166em;
@@ -409,11 +408,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.product-thumb {
+.images__item {
   position: relative;
 }
 
-.lettering {
+.images__box {
   position: absolute;
   background-color: rgba(47, 48, 58, 0.8);
   bottom: 0;
@@ -424,7 +423,7 @@ img {
   padding-bottom: 27px;
   text-align: center;
 }
-.lettering p {
+.images__box p {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -448,12 +447,12 @@ img {
 
   margin-bottom: 50px;
 }
-.container-clients {
+.clients__item {
   width: 1170px;
   display: inline-flex;
   justify-content: space-between;
 }
-.box-a {
+.clients__img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -463,15 +462,15 @@ img {
   justify-content: center;
   align-items: center;
 }
-.button-icon-clients {
+.clients__icon {
   padding: 0px;
   margin: 0px;
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box-a:focus,
-.box-a:hover {
+.clients__img:focus,
+.clients__img:hover {
   fill: #2196f3;
 }
 /* конец*/
@@ -480,17 +479,17 @@ img {
 .teamSection {
   background: #f5f4fa;
 }
-.teamlid {
+.teamlid__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.divteamCard {
+.teamlid__box {
   padding-top: 20px;
   padding-bottom: 30px;
   background: white;
 }
-.team {
+.teamlid__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187em;
@@ -499,26 +498,26 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
-.teamCard {
+.teamlid__description {
   font-size: 16px;
   line-height: 1.187em;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
 }
-.teamlidcard {
+.teamlid {
   display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
-.actions {
+.teamlid__actions {
   display: flex;
   justify-content: center;
 }
-.actions-button-icon:not(:last-child) {
+.teamlid__list:not(:last-child) {
   margin-right: 10px;
 }
-.actions-button-icon {
+.teamlid__list {
   display: flex;
   width: 44px;
   height: 44px;
@@ -527,39 +526,39 @@ img {
   justify-content: center;
   align-items: center;
 }
-.button-actions {
+.teamlid__touch {
   display: flex;
   padding: 12px;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-icon {
+.teamlid__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-actions:focus,
-.button-actions:hover {
+.teamlid__touch:focus,
+.teamlid__touch:hover {
   background-color: #2196f3;
 }
-.button-icon:focus,
-.button-icon:hover {
+.teamlid__icon:focus,
+.teamlid__icon:hover {
   fill: #ffffff;
 }
-.button-actions:focus .button-icon,
-.button-actions:hover .button-icon {
+.teamlid__touch:focus .teamlid__icon,
+.teamlid__touch:hover .teamlid__icon {
   fill: #ffffff;
 }
 /*конец*/
 
 /* Общий footer-присоединяйтесь*/
-.containerJoin {
+.footer__link {
   display: inline-block;
   margin-right: 93px;
 }
-.join {
+.footer__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -568,13 +567,13 @@ img {
   margin-bottom: 20px;
   color: #ffffff;
 }
-.actions-join {
+.footer__link__blok {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.button-icon-join {
+.footer__link__icon {
   display: flex;
   border: none;
   width: 44px;
@@ -587,23 +586,23 @@ img {
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join-block {
+.footer__link__item {
   display: inline-block;
 }
-.join-block:not(:last-child) {
+.footer__link__item:not(:last-child) {
   margin-right: 10px;
 }
-.button-icon-join:focus,
-.button-icon-join:hover {
+.footer__link__icon:focus,
+.footer__link__icon:hover {
   background: #2196f3;
 }
-.icon-join {
+.footer__link__icon {
   fill: white;
 }
 /*конец*/
 
 /* Общий footer-контакты*/
-.colorOne {
+.footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -612,7 +611,7 @@ img {
   align-items: center;
   justify-items: center;
 }
-.containerLogo {
+.footer__bl {
   display: inline-block;
   margin-right: 70px;
 }
@@ -633,21 +632,21 @@ img {
   line-height: 1.192em;
   color: white;
 }
-.address {
+.footer__address {
   line-height: 1.714em;
   color: #ffffff;
 }
-.contakts:hover,
-.contakts:focus {
+.footer__contakts:hover,
+.footer__contakts:focus {
   color: #2196f3;
 }
-.contakts {
+.footer__contakts {
   line-height: 1.714em;
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contaktsOne {
+.footer__contakts__item {
   margin-top: 20px;
 }
 /*конец*/
@@ -685,7 +684,7 @@ img {
   opacity: 0;
   pointer-events: none;
 }
-.button-close {
+.modal__button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -701,16 +700,16 @@ img {
 
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-close,
-.close {
+.modal__button,
+.modal__close {
   cursor: pointer;
 }
-.close {
+.modal__close {
   fill: #000000;
 }
 
-.button-close:focus .close,
-.button-close:hover .close {
+.modal__button:focus .modal__close,
+.modal__button:hover .modal__close {
   fill: #2196f3;
 }
 .form {

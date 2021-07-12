@@ -1,17 +1,27 @@
 .teamSection {
   background: #f5f4fa;
 }
-.teamlid {
+.work_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 50px;
+}
+.teamlid__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.divteamCard {
+.teamlid__box {
   padding-top: 20px;
   padding-bottom: 30px;
   background: white;
 }
-.team {
+.teamlid__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187em;
@@ -20,23 +30,23 @@
   color: #212121;
   margin-bottom: 10px;
 }
-.teamCard {
+.teamlid__description {
   font-size: 16px;
   line-height: 1.187em;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
 }
-.teamlidcard {
+.teamlid {
   display: $flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
-.actions {
+.teamlid__actions {
   display: $flex;
   justify-content: center;
 }
-.actions-button-icon {
+.teamlid__list {
   display: $flex;
   width: 44px;
   height: 44px;
@@ -49,34 +59,33 @@
     margin-right: 10px;
   }
 }
-.button-actions {
+.teamlid__touch {
   display: $flex;
   padding: 12px;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: #2196f3;
+
+  &:focus,
+  &:hover {
+    background-color: $color;
   }
 }
-.button-icon {
+.teamlid__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
+
+  &:focus,
+  &:hover {
     fill: #ffffff;
   }
-  .button-actions:focus & {
-    fill: #ffffff;
-  }
-  .button-actions:hover & {
+  .teamlid__touch:focus & .teamlid__touch:hover & {
     fill: #ffffff;
   }
 }
 
-/*.button-actions:focus .button-icon,
-.button-actions:hover .button-icon {
+/*.teamlid__touch:focus .teamlid__icon,
+.teamlid__touch:hover .teamlid__icon {
   fill: #ffffff;
 }*/

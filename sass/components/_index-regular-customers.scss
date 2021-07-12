@@ -9,26 +9,27 @@
 
   margin-bottom: 50px;
 }
-.container-clients {
+.clients__item {
   width: 1170px;
   display: inline-flex;
   justify-content: space-between;
 }
-.box-a {
+.clients__img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
 
-  display: flex;
+  display: $flex;
   justify-content: center;
   align-items: center;
-  &:focus,
-  &:hover {
-    fill: #2196f3;
+
+  &:hover,
+  &:focus {
+    fill: $color;
   }
 }
-.button-icon-clients {
+.clients__icon {
   padding: $mr;
   margin: $mr;
   fill: #afb1b8;

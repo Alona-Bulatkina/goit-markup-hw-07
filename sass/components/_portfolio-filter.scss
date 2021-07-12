@@ -1,22 +1,22 @@
-.button {
+.filter {
   display: $flex;
   margin-bottom: 50px;
   justify-content: center;
+}
+.filter .filter__item:last-child {
   margin-right: $mr;
 }
-.buttonListMenu {
+.filter__item {
   margin-right: 8px;
   background: #f5f4fa;
   border-radius: 4px;
-  margin-right: 10px;
 }
-
-.listMenu {
-  color: #212121;
+.filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625em;
   letter-spacing: 0.03em;
+  color: #212121;
 
   padding-top: 6px;
   padding-bottom: 6px;

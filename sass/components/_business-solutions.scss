@@ -20,7 +20,7 @@
     ),
     url("../images/Img.jpg");
 }
-.text {
+.hero__text {
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
@@ -33,10 +33,11 @@
   margin-bottom: 30px;
   width: 696px;
 }
-.mainButton {
+
+.hero__button {
   border: transparent;
   cursor: pointer;
-  background: #2196f3;
+  background: $color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: bold;

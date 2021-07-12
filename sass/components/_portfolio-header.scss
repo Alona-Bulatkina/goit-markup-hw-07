@@ -1,12 +1,12 @@
-.mainList {
+.header__nav__bl {
   display: $flex;
   align-items: center;
 }
-.mainList {
+.header__nav__bl {
   li {
     margin-right: 50px;
   }
 }
-.mainList .mainListContakts:last-child {
-  margin-right: &mr;
+.header__nav__bl .header__nav__ListContakts:last-child {
+  margin-right: $mr;
 }
