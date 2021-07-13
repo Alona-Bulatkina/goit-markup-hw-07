@@ -1,12 +1,12 @@
-.header__nav__bl {
-  display: $flex;
+.contakts {
+  display: flex;
   align-items: center;
 }
-.header__nav__bl {
+.contakts {
   li {
     margin-right: 50px;
   }
 }
-.header__nav__bl .header__nav__ListContakts:last-child {
-  margin-right: $mr;
+.contakts .contakts__item:last-child {
+  margin-right: 0;
 }

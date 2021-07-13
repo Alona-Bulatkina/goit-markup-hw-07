@@ -3,23 +3,23 @@
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 1600px;
-  display: $flex;
+  display: flex;
   align-items: center;
   justify-items: center;
 }
-.footer__bl {
+.footer__blok {
   display: inline-block;
   margin-right: 70px;
 }
 .footer-container {
-  display: $flex;
+  display: flex;
   align-items: baseline;
 }
 .logo {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192em;
-  color: $color;
+  color: #2196f3;
 }
 
 .logoFooter {
@@ -37,11 +37,11 @@
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: $color;
+  &:focus,
+  &:hover {
+    color: #2196f3;
   }
 }
-.footer__contakts__item {
+.footer__contakts-item {
   margin-top: 20px;
 }

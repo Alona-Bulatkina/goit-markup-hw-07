@@ -1,28 +1,20 @@
-html {
-  box-sizing: border-box;
-}
-*,
-* ::before,
-*::after {
-  box-sizing: inherit;
-}
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   color: #757575;
 }
-* {
+ul {
   list-style: none;
-  margin: $mr;
-  padding: $mr;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
 header {
   height: 80px;
-  display: $flex;
+  display: flex;
   border: 1px solid #ececec;
 }
 img {

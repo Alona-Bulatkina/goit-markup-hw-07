@@ -1,27 +1,17 @@
 .teamSection {
   background: #f5f4fa;
 }
-.work_title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  margin-bottom: 50px;
-}
-.teamlid__item {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.teamlid__box {
+.team__box {
   padding-top: 20px;
   padding-bottom: 30px;
   background: white;
 }
-.teamlid__name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187em;
@@ -30,24 +20,24 @@
   color: #212121;
   margin-bottom: 10px;
 }
-.teamlid__description {
+.team__description {
   font-size: 16px;
   line-height: 1.187em;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 16px;
 }
-.teamlid {
-  display: $flex;
+.team {
+  display: flex;
   justify-content: space-between;
   padding-bottom: 94px;
 }
-.teamlid__actions {
-  display: $flex;
+.social {
+  display: flex;
   justify-content: center;
 }
-.teamlid__list {
-  display: $flex;
+.social__item {
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50% 50%;
@@ -59,33 +49,27 @@
     margin-right: 10px;
   }
 }
-.teamlid__touch {
-  display: $flex;
+.social__link {
+  display: flex;
   padding: 12px;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
-    background-color: $color;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
   }
 }
-.teamlid__icon {
+.social__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus,
-  &:hover {
+  &:hover,
+  &:focus {
     fill: #ffffff;
   }
-  .teamlid__touch:focus & .teamlid__touch:hover & {
+  .social__link:focus &,
+  .social__link:hover & {
     fill: #ffffff;
   }
 }
-
-/*.teamlid__touch:focus .teamlid__icon,
-.teamlid__touch:hover .teamlid__icon {
-  fill: #ffffff;
-}*/
